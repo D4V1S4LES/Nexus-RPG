@@ -11,6 +11,7 @@
   margin: 0 auto;
   padding: 40px 20px ;
   position: relative;
+  gap: 50px;
 }
 
 .sobre-conteiner::after{
@@ -56,6 +57,7 @@
 
   padding: 10px;
   border-radius: 6px;
+  font-size: 15px;
 }
 
 .participantes li:hover{
@@ -71,4 +73,30 @@
 
 span {
   color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .sobre-subtitulo {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sobre-subtitulo {
+    font-size: 130px;
+  }
+
+  .participantes li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 750px) {
+  .sobre-subtitulo {
+    display: none;
+  }
+
+  .sobre-conteiner {
+    grid-template-columns: 1fr;
+  }
 }
