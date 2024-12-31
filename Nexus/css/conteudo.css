@@ -12,6 +12,8 @@
   margin: 0 auto;
   align-items: start;
   position: relative;
+
+  gap: 50px;
 }
 
 /* .conteudo-conteiner::after{
@@ -34,8 +36,8 @@
   text-transform: uppercase;
 
   max-width: 5ch;
-  font-size: 130px;
-  grid-column: 1;
+  font-size: 145px;
+  /* grid-column: 1; */
 
   padding: 0px;
   position: relative;
@@ -55,4 +57,36 @@
 
 .conteudo-texto p {
   color: #a3a3a3;
+}
+
+@media (max-width: 1000px) {
+  .subtitulo {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 130px;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .conteudo-texto {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
+
+  .subtitulo {
+    /* grid-row: 1;
+    font-size: 50px;
+    grid-column: 1 / -1;
+    word-break: normal;
+    text-orientation: initial; */
+
+    display: none;
+  }
 }

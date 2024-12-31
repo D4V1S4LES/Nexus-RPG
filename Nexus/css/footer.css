@@ -18,3 +18,10 @@
   max-height: 100px;
   display: block;
 }
+
+@media (max-width: 600px) {
+  .footer h2 {
+    font-size: 20px;
+    font-size: 20px;
+  }
+}
