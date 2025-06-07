@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="shortcut icon" href="../img/Nexus-grande.jpg" type="image/x-icon">
+  <script src="script.js" defer></script>
   <title>Nexus Table RPG</title>
 </head>
 
@@ -52,19 +53,6 @@
       <p>Rolador de dados para RPG de mesa</p>
     </div>
   </div>
-
-
-
-  <script>
-    function atchin() {
-      const dadoSelecionado = document.getElementById("dado").value;
-      const maximoDado = parseInt(dadoSelecionado, 10);
-      const numeroSorteado = Math.floor(Math.random() * maximoDado) + 1;
-
-      document.getElementById("resultado").textContent =
-        "Resultado: Você rodou um D" + dadoSelecionado + " e tirou " + numeroSorteado;
-    }
-  </script>
 
   <div class="conteudo" id="como-jogar">
     <div class="conteudo-conteiner">
